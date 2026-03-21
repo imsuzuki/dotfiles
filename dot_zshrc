@@ -28,3 +28,7 @@ export VISUAL="lvim"
 
 # --- Alias ---
 alias v='lvim'
+
+# --- zoxide ---
+eval "$(zoxide init zsh)"
+
