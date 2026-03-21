@@ -1,5 +1,9 @@
 [user]
-	name = suesanjp
-	email = 59773652+suesanjp@users.noreply.github.com
+	name = imsuzuki
+	email = hello@imsuzuki.com
 [core]
 	excludesFile = /Users/sue/.gitignore_global
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
