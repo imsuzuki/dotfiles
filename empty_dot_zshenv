@@ -1,2 +1,2 @@
 # Add local binaries to PATH (e.g., for lvim)
-export PATH=/Users/sue/.local/bin:$PATHDdd
+export PATH=/Users/sue/.local/bin:$PATH
