@@ -8,15 +8,15 @@ fi
 
 # --- Zim ---
 ZIM_HOME=~/.zim
-# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
 if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
   source /opt/homebrew/opt/zimfw/share/zimfw.zsh init
 fi
+
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# Set up fzf key bindings only
+source "$(brew --prefix fzf)/shell/key-bindings.zsh"
 
 # --- Powerlevel10k ---
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -29,6 +29,17 @@ export VISUAL="lvim"
 # --- Alias ---
 alias v='lvim'
 
-# --- zoxide ---
-eval "$(zoxide init zsh)"
+# --- ghq + fzf: jump to repository ---
+function cdr() {
+  local repo
+  repo=$(ghq list | fzf --height 40% --reverse --prompt='repo> ') || return
+  cd "$(ghq root)/$repo"
+}
 
+# --- mise ---
+eval "$(mise activate zsh)"
+
+# --- zoxide ---
+# zoxide's zsh integration should be initialized at the end so its hooks and
+# completion registration are not overwritten by later shell initializers.
+eval "$(zoxide init zsh)"
