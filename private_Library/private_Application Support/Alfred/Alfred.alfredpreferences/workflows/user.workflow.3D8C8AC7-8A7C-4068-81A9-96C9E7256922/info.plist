@@ -6,19 +6,6 @@
 	<string>com.sue.karabiner-space-chord-apps</string>
 	<key>connections</key>
 	<dict>
-		<key>5063B566-D9B1-4DF8-BD4E-1CD4CC199DB2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0A0E148E-9977-4309-B95A-B9A99674BD16</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A026091C-F9E4-4D6D-9696-4B05FC03954E</key>
 		<array>
 			<dict>
@@ -71,6 +58,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FBDD3E86-6E21-4BC6-BE4C-091CB4277925</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>55EDCA18-588D-4918-B9EF-544046250015</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Tomoaki Suzuki</string>
@@ -82,6 +82,23 @@
 	<string>Karabiner Space Layer Apps</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Obsidian.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>55EDCA18-588D-4918-B9EF-544046250015</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -109,26 +126,9 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>5063B566-D9B1-4DF8-BD4E-1CD4CC199DB2</string>
+			<string>FBDD3E86-6E21-4BC6-BE4C-091CB4277925</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Obsidian.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>0A0E148E-9977-4309-B95A-B9A99674BD16</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -181,23 +181,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Visual Studio Code.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>0271BB78-D449-4409-90F0-EF034F14D61E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -231,7 +214,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Codex.app</string>
+					<string>/Applications/Visual Studio Code.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -239,7 +222,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>DF60B58C-1749-44A7-B1A1-7BC0A2D26EAF</string>
+			<string>0271BB78-D449-4409-90F0-EF034F14D61E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -277,6 +260,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Codex.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>DF60B58C-1749-44A7-B1A1-7BC0A2D26EAF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Google Chrome.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>DDF5FF91-BA6D-4D70-8ACC-D160CAD5F70B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -305,97 +322,80 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Google Chrome.app</string>
-				</array>
-				<key>toggle</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>DDF5FF91-BA6D-4D70-8ACC-D160CAD5F70B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string>Karabiner maps Space+Y/U/I/O/P to Hyper+Y/U/I/O/P. This workflow launches Obsidian, Alacritty, Visual Studio Code, Codex, and Google Chrome.</string>
+	<string>Karabiner sends Space-code app shortcuts as hotkeys. Alfred handles app launches; Alfred search toggles via the normal Command-Space hotkey.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0271BB78-D449-4409-90F0-EF034F14D61E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>290</integer>
+			<real>260</real>
 		</dict>
-		<key>0A0E148E-9977-4309-B95A-B9A99674BD16</key>
+		<key>55EDCA18-588D-4918-B9EF-544046250015</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>50</integer>
-		</dict>
-		<key>5063B566-D9B1-4DF8-BD4E-1CD4CC199DB2</key>
-		<dict>
-			<key>xpos</key>
-			<integer>50</integer>
-			<key>ypos</key>
-			<integer>50</integer>
+			<real>25</real>
 		</dict>
 		<key>A026091C-F9E4-4D6D-9696-4B05FC03954E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>530</integer>
+			<real>500</real>
 		</dict>
 		<key>AAB6314B-8B16-47CE-B57F-C87DDD9FBB01</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>410</integer>
+			<real>380</real>
 		</dict>
 		<key>C81D1F90-8EF1-4CF9-BE70-3FBDE5B2D569</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>140</real>
 		</dict>
 		<key>CF5F81C3-ED49-4E89-A572-2DF480041431</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>290</integer>
+			<real>260</real>
 		</dict>
 		<key>DDF5FF91-BA6D-4D70-8ACC-D160CAD5F70B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>530</integer>
+			<real>500</real>
 		</dict>
 		<key>DF60B58C-1749-44A7-B1A1-7BC0A2D26EAF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>410</integer>
+			<real>380</real>
 		</dict>
 		<key>EC7C6543-F1A6-41B4-8915-AE9FB27E01AA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>140</real>
+		</dict>
+		<key>FBDD3E86-6E21-4BC6-BE4C-091CB4277925</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>25</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
